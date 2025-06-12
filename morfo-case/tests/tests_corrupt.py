@@ -7,11 +7,11 @@ def test_corrupted_file(tmp_path):
     batch_dir = tmp_path / "batch_test"
     batch_dir.mkdir()
 
-    # Imagem válida
+    # valid img
     img = np.zeros((200, 200, 3), dtype=np.uint8)
     np.save(batch_dir / "img_valid.npy", img)
 
-    # Imagem corrompida (arquivo vazio)
+    # empty img
     with open(batch_dir / "img_broken.npy", "wb") as f:
         f.write(b"")
 
