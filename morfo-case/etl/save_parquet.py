@@ -61,7 +61,7 @@ def main():
     df.to_parquet(local_file, index=False)
     print("✅ batch_summary.parquet saved.")
 
-    # Upload to S3 (Passo 8)
+    # Upload to S3 (question 8)
     upload_to_s3(local_file, "raw", "test/test.parquet")
 
 if __name__ == "__main__":
