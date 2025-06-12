@@ -1,2 +1,0 @@
-# Morfo ETL Case
-
