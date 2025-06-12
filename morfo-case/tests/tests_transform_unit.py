@@ -1,8 +1,6 @@
 import numpy as np
 from etl.generate_batches import add_white_black_squares
 
-#testing commit again
-
 def test_squares_do_not_overlap():
     img = np.zeros((256, 512, 3), dtype=np.uint8)
     modified = add_white_black_squares(img.copy())
